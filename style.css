@@ -113,129 +113,6 @@ h6 {
   padding: 0 0.9375rem;
 }
 
-.preloader {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-  transition: 1s all;
-  opacity: 1;
-  visibility: visible;
-}
-.preloader__loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 7px;
-}
-.preloader.done {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loader__doots-1 {
-  width: 15px;
-  height: 15px;
-  background: #B6E247;
-  border-radius: 50%;
-  -webkit-animation: 1s loader-doots-1 infinite;
-          animation: 1s loader-doots-1 infinite;
-}
-.loader__doots-2 {
-  width: 15px;
-  height: 15px;
-  background: #B6E247;
-  border-radius: 50%;
-  -webkit-animation: 1s loader-doots-1 infinite;
-          animation: 1s loader-doots-1 infinite;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
-}
-.loader__doots-3 {
-  width: 15px;
-  height: 15px;
-  background: #B6E247;
-  border-radius: 50%;
-  -webkit-animation: 1s loader-doots-1 infinite;
-          animation: 1s loader-doots-1 infinite;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-@-webkit-keyframes loader-doots-1 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -30px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes loader-doots-1 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -30px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@-webkit-keyframes loader-doots-2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -30px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@keyframes loader-doots-2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -30px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@-webkit-keyframes loader-doots-3 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -30px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@keyframes loader-doots-3 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -30px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 .h2 {
   font-weight: 600;
   line-height: 3.0625rem;
@@ -266,7 +143,7 @@ h6 {
 }
 
 .header {
-  background: linear-gradient(180deg, #5D924A 0%, #5A8D48 100%);
+  background: linear-gradient(180deg, #88E167 0%, #83D965 100%);
   font-size: 1.25rem;
 }
 @media (min-width: 75em) {
@@ -539,7 +416,7 @@ h6 {
 }
 
 .about {
-  background: linear-gradient(180deg, #5A8D48 0%, #43673E 100%);
+  background: linear-gradient(180deg, #83D965 0%, #5B934F 100%);
   padding: 3.125rem 0;
 }
 .about__container {
@@ -648,7 +525,7 @@ h6 {
 }
 
 .contacts {
-  background: linear-gradient(180deg, #43673E 0%, #3D5B3B 100%);
+  background: linear-gradient(180deg, #5B934F 0%, #4F7E48 100%);
   padding: 3.125rem 0;
   position: relative;
 }
@@ -810,7 +687,7 @@ h6 {
   }
 }
 .skills {
-  background: linear-gradient(180deg, #3D5B3B 0%, #324A37 100%);
+  background: linear-gradient(180deg, #4F7E48 0%, #426641 100%);
   padding: 3.125rem 0;
   position: relative;
 }
@@ -888,7 +765,7 @@ h6 {
 }
 
 .education {
-  background: linear-gradient(180deg, #324A37 0%, #283832 100%);
+  background: linear-gradient(180deg, #426641 0%, #314938 100%);
   padding: 3.125rem 0;
   position: relative;
 }
@@ -923,7 +800,7 @@ h6 {
   top: 0;
 }
 .education__list {
-  max-width: 38.75rem;
+  max-width: 32.75rem;
   margin: auto;
 }
 .education__item:not(:last-child) {
@@ -931,7 +808,7 @@ h6 {
 }
 
 .courses {
-  background: linear-gradient(180deg, #283832 0%, #233030 100%);
+  background: linear-gradient(180deg, #314938 0%, #273732 100%);
   padding: 3.125rem 0;
   position: relative;
 }
@@ -960,7 +837,7 @@ h6 {
 .courses::before {
   content: "";
   position: absolute;
-  width: 21%;
+  width: 42%;
   height: 2px;
   background: #5EE7DF;
   top: 0;
@@ -974,7 +851,7 @@ h6 {
 }
 
 .language {
-  background: linear-gradient(180deg, #233030 0%, #1D262D 100%);
+  background: linear-gradient(180deg, #273732 0%, #1D262D 100%);
   padding: 3.125rem 0;
   position: relative;
 }
@@ -1003,7 +880,7 @@ h6 {
 .language::before {
   content: "";
   position: absolute;
-  width: 42%;
+  width: 21%;
   height: 2px;
   background: #5EE7DF;
   top: 0;

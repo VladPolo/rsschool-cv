@@ -17,5 +17,6 @@ menuBurger.addEventListener("click", function(item) {
 
 function showMenu() {
     this.parentElement.classList.toggle('menu-open');
+    menuBurger.classList.toggle("menu-open");
     html.classList.toggle("lock");
 }

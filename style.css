@@ -842,7 +842,7 @@ h6 {
 .courses::before {
   content: "";
   position: absolute;
-  width: 21%;
+  width: 42%;
   height: 2px;
   background: #5EE7DF;
   top: 0;
@@ -890,7 +890,7 @@ h6 {
 .language::before {
   content: "";
   position: absolute;
-  width: 42%;
+  width: 21%;
   height: 2px;
   background: #5EE7DF;
   top: 0;

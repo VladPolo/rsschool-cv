@@ -81,6 +81,9 @@ h6 {
   font-size: inherit;
 }
 
+body {
+  background: #1D262D;
+}
 .lock body {
   overflow: hidden;
   touch-action: none;
@@ -118,6 +121,8 @@ h6 {
   line-height: 3.0625rem;
   color: #5EE7DF;
   margin-bottom: 1.875rem;
+  position: relative;
+  display: inline-block;
 }
 @media (min-width: 76.875em) {
   .h2 {
@@ -140,6 +145,17 @@ h6 {
   .h2 {
     font-size: 1.875rem;
   }
+}
+.h2::before {
+  content: "";
+  position: absolute;
+  width: 0.625rem;
+  height: 0.625rem;
+  left: -15px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: #5EE7DF;
 }
 
 .header {
@@ -369,15 +385,6 @@ h6 {
 .footer {
   background: linear-gradient(180deg, #1D262D 0%, #1D262D 0.01%, #1D262D 100%);
   padding: 3.125rem 0;
-  position: relative;
-}
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 21%;
-  height: 2px;
-  background: #5EE7DF;
-  top: 0;
 }
 .footer__container {
   display: flex;
@@ -527,15 +534,6 @@ h6 {
 .contacts {
   background: linear-gradient(180deg, #5B934F 0%, #4F7E48 100%);
   padding: 3.125rem 0;
-  position: relative;
-}
-.contacts::before {
-  content: "";
-  position: absolute;
-  width: 21%;
-  height: 2px;
-  background: #5EE7DF;
-  top: 0;
 }
 
 @media (min-width: 76.875em) {
@@ -689,7 +687,6 @@ h6 {
 .skills {
   background: linear-gradient(180deg, #4F7E48 0%, #426641 100%);
   padding: 3.125rem 0;
-  position: relative;
 }
 @media (min-width: 76.875em) {
   .skills {
@@ -712,14 +709,6 @@ h6 {
   .skills {
     font-size: 1.25rem;
   }
-}
-.skills::before {
-  content: "";
-  position: absolute;
-  width: 42%;
-  height: 2px;
-  background: #5EE7DF;
-  top: 0;
 }
 .skills__list {
   display: grid;
@@ -768,7 +757,6 @@ h6 {
 .education {
   background: linear-gradient(180deg, #426641 0%, #314938 100%);
   padding: 3.125rem 0;
-  position: relative;
 }
 @media (min-width: 76.875em) {
   .education {
@@ -791,14 +779,6 @@ h6 {
   .education {
     font-size: 1.25rem;
   }
-}
-.education::before {
-  content: "";
-  position: absolute;
-  width: 21%;
-  height: 2px;
-  background: #5EE7DF;
-  top: 0;
 }
 .education__list {
   text-align: center;
@@ -815,7 +795,6 @@ h6 {
 .courses {
   background: linear-gradient(180deg, #314938 0%, #273732 100%);
   padding: 3.125rem 0;
-  position: relative;
 }
 @media (min-width: 76.875em) {
   .courses {
@@ -838,14 +817,6 @@ h6 {
   .courses {
     font-size: 1.25rem;
   }
-}
-.courses::before {
-  content: "";
-  position: absolute;
-  width: 42%;
-  height: 2px;
-  background: #5EE7DF;
-  top: 0;
 }
 .courses__list {
   display: flex;
@@ -863,7 +834,6 @@ h6 {
 .language {
   background: linear-gradient(180deg, #273732 0%, #1D262D 100%);
   padding: 3.125rem 0;
-  position: relative;
 }
 @media (min-width: 76.875em) {
   .language {
@@ -886,14 +856,6 @@ h6 {
   .language {
     font-size: 1.25rem;
   }
-}
-.language::before {
-  content: "";
-  position: absolute;
-  width: 21%;
-  height: 2px;
-  background: #5EE7DF;
-  top: 0;
 }
 .language__list {
   display: flex;
@@ -916,7 +878,6 @@ h6 {
 .code {
   background: linear-gradient(180deg, #1D262D 0%, #1D262D 100%);
   padding: 3.125rem 0;
-  position: relative;
 }
 @media (min-width: 76.875em) {
   .code {
@@ -939,14 +900,6 @@ h6 {
   .code {
     font-size: 0.5625rem;
   }
-}
-.code::before {
-  content: "";
-  position: absolute;
-  width: 42%;
-  height: 2px;
-  background: #5EE7DF;
-  top: 0;
 }
 .code__code {
   max-width: 52.8125rem;
